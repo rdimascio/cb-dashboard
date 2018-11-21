@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/index.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="../assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/ui/fullcalendar/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+
+	<script type="text/javascript" src="../assets/js/core/app.js"></script>
+	<script type="text/javascript" src="../assets/js/pages/user_profile_tabbed.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body class="navbar-top has-detached-left">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/"><img src="../assets/images/visibly_logo_reverse.png" alt=""></a>
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="https://randomuser.me/api/portraits/women/68.jpg" class="img-circle img-sm" alt=""></a>
+								<div class="media-body">
+									<span class="media-heading text-semibold">Victoria Baker</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-office text-size-small"></i> &nbsp;Channel Bakers
+									</div>
+								</div>
+
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#"><i class="icon-cog3"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class=""><a href="/"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+								<li class=""><a href="/budget/"><i class="icon-coins"></i> <span>Budgets</span></a></li>
+								<li class=""><a href="/client/"><i class="icon-people"></i> <span>Clients</span></a></li>
+								<!-- /Main -->
+
+								<!-- Amazon -->
+								<li class="navigation-header"><span>Advertising</span> <i class="icon-menu" title="Advertising"></i></li>
+								<!-- <li><a href="/"><i class="fa fa-amazon"></i> <span>Amazon AAP</span></a></li> -->
+								<li class=""><a href="/ams/"><i class="fa fa-amazon"></i> <span>Amazon Ads API (Beta)</span></a></li>
+								<li class=""><a href="/ams/invoices"><i class="fa fa-amazon"></i> <span>Amazon Ads Billing</span></a></li>
+								<!-- <li><a href="/"><i class="fa fa-amazon"></i> <span>Amazon Ads Legacy</span></a></li>
+								<li><a href="/"><i class="fa fa-amazon"></i> <span>Amazon Seller Central</span></a></li>
+								<li><a href="/"><i class="fa fa-windows"></i> <span>Bing</span></a></li>
+								<li><a href="/"><i class="fa fa-location-arrow"></i> <span>Criteo</span></a></li>
+								<li><a href="/"><i class="fa fa-facebook"></i> <span>Facebook Ads</span></a></li>
+								<li><a href="/"><i class="fa fa-google"></i> <span>Google Ads</span></a></li> -->
+
+								<!-- Automation -->
+<!-- 								<li class="navigation-header"><span>Automation</span> <i class="icon-menu" title="Automation"></i></li>
+								<li class=""><a href="/automation/"><i class="fa fa-sliders"></i> <span>Optimization</span></a></li> -->
+
+								<li class="navigation-header"><span>Research</span> <i class="icon-menu" title="Research"></i></li>
+								<!-- <li><a href="/"><i class="fa fa-amazon"></i> <span>Keyword Research</span></a></li> -->
+								<li class=""><a href="/ams/keywords/"><i class="fa fa-amazon"></i> <span>Suggested Keywords</span></a></li>
+
+								<!-- Account -->
+								<li class="navigation-header"><span>Account</span> <i class="icon-menu" title="Account"></i></li>
+<!-- 								<li class=""><a href="/brand/"><i class="icon-office"></i> <span>Manage Brand</span></a></li>
+								<li class=""><a href="/brand/users/"><i class="icon-person"></i> <span>Users</span></a></li> -->
+
+								<li class="active"><a href="#"><i class="icon-profile"></i> <span>Your Profile</span></a></li>
+								<!-- /Account -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header page-header-default">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-profile position-left"></i> <span class="text-semibold">Account</span> - Your Profile</h4>
+						</div>
+					</div>
+
+					<div class="breadcrumb-line">
+						<ul class="breadcrumb">
+							<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+							<li><a href="user_profile_tabbed.html">Account</a></li>
+							<li class="active">Edit Profile</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Detached sidebar -->
+					<div class="sidebar-detached">
+						<div class="sidebar sidebar-default sidebar-separate">
+							<div class="sidebar-content">
+
+								<!-- User details -->
+								<div class="content-group">
+									<div class="panel-body bg-indigo-400 border-radius-top text-center" style="background-image: url(http://demo.interface.club/limitless/assets/images/bg.png); background-size: contain;">
+										<div class="content-group-sm">
+											<h6 class="text-semibold no-margin-bottom">
+												Victoria Baker
+											</h6>
+
+											<span class="display-block">Channel Bakers</span>
+										</div>
+
+										<a href="#" class="display-inline-block content-group-sm">
+											<img src="https://randomuser.me/api/portraits/women/68.jpg" class="img-circle img-responsive" alt="" style="width: 110px; height: 110px;">
+										</a>
+									</div>
+
+									<div class="panel no-border-top no-border-radius-top">
+										<ul class="navigation">
+											<li class="navigation-header">Navigation</li>
+											<li class="active"><a href="#profile" data-toggle="tab"><i class="icon-files-empty"></i> Profile</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="login_advanced.html"><i class="icon-switch2"></i> Log out</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- /user details -->
+
+							</div>
+						</div>
+					</div>
+		            <!-- /detached sidebar -->
+
+
+					<!-- Detached content -->
+					<div class="container-detached">
+						<div class="content-detached">
+
+							<!-- Tab content -->
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="profile">
+
+									<!-- Profile info -->
+									<div class="panel panel-flat">
+										<div class="panel-heading">
+											<h6 class="panel-title">Profile information</h6>
+											<div class="heading-elements">
+												<ul class="icons-list">
+							                		<li><a data-action="collapse"></a></li>
+							                		<li><a data-action="reload"></a></li>
+							                		<li><a data-action="close"></a></li>
+							                	</ul>
+						                	</div>
+										</div>
+
+										<div class="panel-body">
+											<form action="#">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-6">
+															<label>First Name</label>
+															<input type="text" value="" class="form-control">
+														</div>
+														<div class="col-md-6">
+															<label>Last name</label>
+															<input type="text" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-12">
+															<label>Address line 1</label>
+															<input type="text" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-4">
+															<label>City</label>
+															<input type="text" value="" class="form-control">
+														</div>
+														<div class="col-md-4">
+															<label>State/Province</label>
+															<input type="text" value="" class="form-control">
+														</div>
+														<div class="col-md-4">
+															<label>ZIP code</label>
+															<input type="text" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-6">
+															<label>Email</label>
+															<input type="text" readonly="readonly" value="victoriab@channelbakers.com" class="form-control">
+														</div>
+														<div class="col-md-6">
+								                            <label>Your country</label>
+								                            <select class="select">
+								                                <option value="United States" selected="selected">United States</option>
+								                            </select>
+														</div>
+													</div>
+												</div>
+
+						                        <div class="form-group">
+						                        	<div class="row">
+						                        		<div class="col-md-6">
+															<label>Phone #</label>
+															<input type="text" value="" class="form-control">
+															<span class="help-block">555-555-5555</span>
+						                        		</div>
+
+														<div class="col-md-6">
+															<label class="display-block">Upload profile image</label>
+						                                    <input type="file" class="file-styled">
+						                                    <span class="help-block">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+														</div>
+						                        	</div>
+						                        </div>
+
+						                        <div class="text-right">
+						                        	<button type="submit" class="btn btn-primary">Save <i class="icon-arrow-right14 position-right"></i></button>
+						                        </div>
+											</form>
+										</div>
+									</div>
+									<!-- /profile info -->
+
+
+									<!-- Account settings -->
+									<div class="panel panel-flat">
+										<div class="panel-heading">
+											<h6 class="panel-title">Account settings</h6>
+											<div class="heading-elements">
+												<ul class="icons-list">
+							                		<li><a data-action="collapse"></a></li>
+							                		<li><a data-action="reload"></a></li>
+							                		<li><a data-action="close"></a></li>
+							                	</ul>
+						                	</div>
+										</div>
+
+										<div class="panel-body">
+											<form action="#">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-6">
+															<label>Username</label>
+															<input type="text" value="victoriab@channelbakers.com" readonly="readonly" class="form-control">
+														</div>
+
+														<div class="col-md-6">
+															<label>Current password</label>
+															<input type="password" value="" readonly="readonly" class="form-control">
+														</div>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-6">
+															<label>New password</label>
+															<input type="password" placeholder="Enter new password" class="form-control">
+														</div>
+
+														<div class="col-md-6">
+															<label>Repeat password</label>
+															<input type="password" placeholder="Repeat new password" class="form-control">
+														</div>
+													</div>
+												</div>
+
+						                        <div class="text-right">
+						                        	<button type="submit" class="btn btn-primary">Save <i class="icon-arrow-right14 position-right"></i></button>
+						                        </div>
+					                        </form>
+										</div>
+									</div>
+									<!-- /account settings -->
+
+								</div>
+
+							</div>
+							<!-- /tab content -->
+
+						</div>
+					</div>
+					<!-- /detached content -->
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2018 Visibly | Version 2018.3.1
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>
